@@ -1,0 +1,60 @@
+.float-group {
+  position: fixed;
+  right: 24px; bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  z-index: 900;
+}
+.float-connect-text {
+  font-family: var(--font-code);
+  font-size: 0.6rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  animation: blinkText 2s step-end infinite;
+}
+.float-btn {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+.float-btn svg { width: 22px; height: 22px; }
+.float-btn::before {
+  content: attr(data-tip);
+  position: absolute;
+  right: 62px;
+  background: var(--bg3);
+  color: var(--text);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-family: var(--font-code);
+  font-size: 0.7rem;
+  white-space: nowrap;
+  border: 1px solid var(--border);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.float-btn:hover::before { opacity: 1; }
+.float-wa {
+  background: #25d366;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  animation: floatPulse 2.5s ease-in-out infinite;
+}
+.float-wa:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.6); }
+.float-call {
+  background: var(--accent-g);
+  box-shadow: 0 4px 20px var(--glow1);
+  animation: floatPulse 2.5s ease-in-out infinite 0.5s;
+}
+.float-call:hover { transform: scale(1.1); box-shadow: 0 6px 28px var(--glow1); }
+@media (max-width: 600px) { .float-btn { width: 46px; height: 46px; } }
