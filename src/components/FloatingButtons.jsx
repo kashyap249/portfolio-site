@@ -3,7 +3,7 @@ import './FloatingButtons.css'
 export default function FloatingButtons() {
   return (
     <div className="float-group">
-      
+      <p className="float-connect-text">// connect </p>
       <a
         href="https://wa.me/917544059165?text=Hi%20Kashyap%2C%20I%20want%20to%20make%20a%20website!"
         className="float-btn float-wa"
@@ -20,7 +20,7 @@ export default function FloatingButtons() {
       <a
         href="tel:+917544059165"
         className="float-btn float-call"
-        data-tip="Connect "
+        data-tip="Connect with Kashyap"
         aria-label="Call"
       >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
