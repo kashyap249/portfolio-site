@@ -20,7 +20,7 @@ export default function FloatingButtons() {
       <a
         href="tel:+917544059165"
         className="float-btn float-call"
-        data-tip="Connect with Kashyap"
+        data-tip="Connect "
         aria-label="Call"
       >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
